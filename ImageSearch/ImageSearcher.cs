@@ -4,6 +4,12 @@ using System.Net;
 using Newtonsoft.Json;
 
 namespace ImageContest.ImageSearch {
+
+    /* 
+     * This class uses the Bing Image Search API to find two image search results.
+     *  The code is liberally copied from the Bing Image Search Quickstart for C#:
+     *  https://damo.ms/BingImageSearch
+     */
     public class ImageSearcher {
 
         public string SubscriptionKey { get; }
@@ -14,12 +20,14 @@ namespace ImageContest.ImageSearch {
         }
 
         public TwoSearchResults GetImageSearchResults(string searchTerm) {
+            // construct request and get JSON response
             var uriQuery = uriBase + "?q=" + Uri.EscapeDataString(searchTerm) + "&safeSearch=Strict";
             WebRequest request = WebRequest.Create(uriQuery);
             request.Headers["Ocp-Apim-Subscription-Key"] = SubscriptionKey;
             HttpWebResponse response = (HttpWebResponse)request.GetResponseAsync().Result;
             string json = new StreamReader(response.GetResponseStream()).ReadToEnd();
 
+            // deserialize response and return two thumbnail URLs
             dynamic jsonObj = JsonConvert.DeserializeObject(json);
             var randomIndex = new Random().Next(1,10);
 

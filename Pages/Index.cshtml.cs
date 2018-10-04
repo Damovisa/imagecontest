@@ -39,8 +39,10 @@ namespace ImageContest.Pages
                 return Page();
             }
 
+            // get two images given the search string
             var imageSearcher = new ImageSearch.ImageSearcher(Config["BingImageApiKey"]);
             var results = imageSearcher.GetImageSearchResults(SearchDetails.SearchTerm);
+            // randomly choose which will be the first image vs second image
             if (new Random().Next(1) == 1) {
                 SearchDetails.ImgUrl1 = results.Img1Url;
                 SearchDetails.ImgUrl2 = results.Img2Url;
