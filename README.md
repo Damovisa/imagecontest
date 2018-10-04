@@ -27,6 +27,6 @@ However, we'll be releasing a <5min video soon showing how easy it is to put all
 
 ## What if I find a bug!?
 
-Dont' worry - there are bugs, and they're meant to be there, so they probably won't be fixed.
+Don't worry - there are bugs, and they're meant to be there, so they probably won't be fixed.
 
 Wow, as a developer, it's amazing to be able to say that.
