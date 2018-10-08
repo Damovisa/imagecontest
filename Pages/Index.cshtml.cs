@@ -34,7 +34,8 @@ namespace ImageContest.Pages
                     (SearchDetails.Guess == 2 && SearchDetails.ImgUrl2SearchIndex == 0)) {
                         SearchDetails.Message = $"You guessed correctly! That's the number 1 search result for \"{SearchDetails.SearchTerm}\" on Bing Images";
                 } else {
-                    SearchDetails.Message = $"Incorrect! This image was search result number {(SearchDetails.Guess == 1 ? SearchDetails.ImgUrl1SearchIndex : SearchDetails.ImgUrl2SearchIndex)} for \"{SearchDetails.SearchTerm}\" on Bing Images";
+                    var searchIndex = (SearchDetails.Guess == 1 ? SearchDetails.ImgUrl1SearchIndex : SearchDetails.ImgUrl2SearchIndex);
+                    SearchDetails.Message = $"Incorrect! This image was search result number {searchIndex} for \"{SearchDetails.SearchTerm}\" on Bing Images";
                 }
                 return Page();
             }
