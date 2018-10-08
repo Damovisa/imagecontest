@@ -40,7 +40,6 @@ namespace ImageContest.Pages
                     // track correct guess information
                     AppInsights.TrackEvent(
                         "CorrectGuess", new Dictionary<string, string>() {
-                            {"Correct", "true"},
                             {"SearchTerm", SearchDetails.SearchTerm}
                         });
 
@@ -51,7 +50,6 @@ namespace ImageContest.Pages
                     // track incorrect guess information
                     AppInsights.TrackEvent(
                         "IncorrectGuess", new Dictionary<string, string>() {
-                            {"Correct", "false"},
                             {"SearchTerm", SearchDetails.SearchTerm},
                             {"GuessIndex", searchIndex.ToString() }
                     });
