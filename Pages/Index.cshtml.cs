@@ -38,20 +38,22 @@ namespace ImageContest.Pages
                         SearchDetails.Message = $"You guessed correctly! That's the number 1 search result for \"{SearchDetails.SearchTerm}\" on Bing Images";
                     
                     // track correct guess information
-                    AppInsights.TrackEvent("GuessResult", new Dictionary<string, string>() {
-                        {"Correct", "true"},
-                        {"SearchTerm", SearchDetails.SearchTerm}
-                    });
+                    AppInsights.TrackEvent(
+                        "CorrectGuess", new Dictionary<string, string>() {
+                            {"Correct", "true"},
+                            {"SearchTerm", SearchDetails.SearchTerm}
+                        });
 
                 } else {
                     var searchIndex = (SearchDetails.Guess == 1 ? SearchDetails.ImgUrl1SearchIndex : SearchDetails.ImgUrl2SearchIndex);
                     SearchDetails.Message = $"Incorrect! This image was search result number {searchIndex} for \"{SearchDetails.SearchTerm}\" on Bing Images";
 
                     // track incorrect guess information
-                    AppInsights.TrackEvent("GuessResult", new Dictionary<string, string>() {
-                        {"Correct", "false"},
-                        {"SearchTerm", SearchDetails.SearchTerm},
-                        {"GuessIndex", searchIndex.ToString() }
+                    AppInsights.TrackEvent(
+                        "IncorrectGuess", new Dictionary<string, string>() {
+                            {"Correct", "false"},
+                            {"SearchTerm", SearchDetails.SearchTerm},
+                            {"GuessIndex", searchIndex.ToString() }
                     });
                 }
                 return Page();
