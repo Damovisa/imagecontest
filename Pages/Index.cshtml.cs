@@ -17,6 +17,7 @@ namespace ImageContest.Pages
             Config = config;
             AppInsights = new TelemetryClient();
         }
+        
         [BindProperty]
         public SearchModel SearchDetails {get; set;}
         public IConfiguration Config { get; }
