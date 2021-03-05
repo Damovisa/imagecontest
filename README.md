@@ -1,13 +1,13 @@
 # Image Contest!
 
-This is a sample ASP.NET Core application used to demonstrate just a few of the [many, many things you can do on Azure for free](https://azure.microsoft.com/en-us/free/free-account-faq/?WT.mc_id=AzureSocialDemo-github-dabrady)!
+This is a sample ASP.NET Core application used to demonstrate just a few of the [many, many things you can do on Azure for free](https://azure.microsoft.com/free/free-account-faq/?WT.mc_id=devops-0000-dabrady)!
 
- - The free [Azure Pipelines](https://www.azure.com/pipelines/?WT.mc_id=AzureSocialDemo-github-dabrady) offering for Open Source projects
- - Azure [App Service](https://azure.microsoft.com/en-au/services/app-service/?WT.mc_id=AzureSocialDemo-github-dabrady)
- - [Cognitive Services](https://azure.microsoft.com/en-au/services/cognitive-services/?WT.mc_id=AzureSocialDemo-github-dabrady) - specifically the [Bing Image Search API](https://azure.microsoft.com/en-au/services/cognitive-services/bing-image-search-api/?WT.mc_id=AzureSocialDemo-github-dabrady)
-- [Azure Monitor](https://azure.microsoft.com/en-au/services/monitor/?WT.mc_id=AzureSocialDemo-github-dabrady) (specifically [Application Insights](https://docs.microsoft.com/en-us/azure/application-insights/app-insights-overview?WT.mc_id=AzureSocialDemo-github-dabrady))
+ - The free [Azure Pipelines](https://www.azure.com/pipelines/?WT.mc_id=devops-0000-dabrady) offering for Open Source projects
+ - Azure [App Service](https://azure.microsoft.com/services/app-service/?WT.mc_id=devops-0000-dabrady)
+ - [Cognitive Services](https://azure.microsoft.com/services/cognitive-services/?WT.mc_id=devops-0000-dabrady) - specifically the [Bing Image Search API](https://azure.microsoft.com/services/cognitive-services/bing-image-search-api/?WT.mc_id=devops-0000-dabrady)
+- [Azure Monitor](https://azure.microsoft.com/services/monitor/?WT.mc_id=devops-0000-dabrady) (specifically [Application Insights](https://docs.microsoft.com/azure/application-insights/app-insights-overview?WT.mc_id=devops-0000-dabrady))
 
-And of course I used [VS Code](https://code.visualstudio.com/?WT.mc_id=AzureSocialDemo-github-dabrady) for all the dev work. Also free!!
+And of course I used [VS Code](https://code.visualstudio.com/?WT.mc_id=devops-0000-dabrady) for all the dev work. Also free!!
 
 ## Ok but does it actually do?
 
